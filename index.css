@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('fond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Couche sombre avec opacité à 70% */
+    z-index: -1; /* Place la couche derrière tout le contenu */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: darkred;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.presentation {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.download-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: darkred;
+}
+
+.presentation {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3); /* Fond noir semi-transparent */
+    color: white; /* Texte en blanc */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Ajoute une ombre au texte pour améliorer la lisibilité */
+    border-radius: 8px; /* Coins arrondis */
+}

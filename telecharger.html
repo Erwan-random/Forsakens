@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsakens - Télécharger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            color: black;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: black;
+        }
+        #logo {
+            height: 50px;
+            margin-right: 20px;
+        }
+        nav {
+            position: relative;
+        }
+        nav a {
+            color: red;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 150px;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: red;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-weight: normal;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: darkred;
+            text-decoration: none;
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .download-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.jpg" alt="Logo du jeu Forsakens" id="logo"></a>
+        <nav>
+            <div class="dropdown">
+                <a href="#">Présentation ▼</a>
+                <div class="dropdown-content">
+                    <a href="agents.html">AGENTS</a>
+                    <a href="pouvoirs.html">Pouvoirs</a>
+                    <a href="armes.html">Armes</a>
+                </div>
+            </div>
+            <a href="histoire.html">Histoire</a>
+            <a href="telecharger.html">Télécharger</a>
+            <a href="ressources.html">Ressources</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="download-section">
+            <h1>Télécharger Forsakens</h1>
+            <p>Pour commencer votre aventure, cliquez sur le bouton ci-dessous pour télécharger le jeu.</p>
+            <a href="https://www.google.com" class="download-button" target="_blank">Télécharger Forsakens</a>
+        </div>
+    </main>
+</body>
+</html>
