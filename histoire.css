@@ -1,19 +1,29 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fond.jpg');
+    background: url('fond.png') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     color: black;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Couche sombre avec opacité à 70% */
+    z-index: -1; /* Place la couche derrière tout le contenu */
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #logo {
@@ -71,18 +81,21 @@ nav a:hover {
 
 h1 {
     text-align: center;
-    color: darkgreen;
+    color: white;
     margin-top: 20px;
 }
 
 .story-box {
     max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    background-color: rgba(0, 0, 0, 0.3); /* Fond noir semi-transparent */
     padding: 20px;
     border: 1px solid #ccc;
     margin: 20px auto;
     font-size: 1.1em;
     line-height: 1.6;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Améliore la lisibilité */
+    border-radius: 8px;
 }
 
 .creators-section {
@@ -93,7 +106,7 @@ h1 {
 .creator-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: darkgreen;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -112,6 +125,7 @@ h1 {
 .creator-name {
     font-weight: bold;
     margin-bottom: 10px;
+    color: white;
 }
 
 .creator-image {
@@ -122,4 +136,3 @@ h1 {
     object-fit: cover;
     border: 2px solid #ccc;
 }
-
