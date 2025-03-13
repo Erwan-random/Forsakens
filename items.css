@@ -99,7 +99,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 300px; /* Same height for all items */
+    height: 300px;
     justify-content: space-between;
 }
 
