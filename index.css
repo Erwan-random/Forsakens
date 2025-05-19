@@ -6,7 +6,9 @@ body {
     background-size: cover;
     color: black;
     position: relative;
+    cursor: url('logo.png'), auto;
 }
+
 
 body::before {
     content: '';
@@ -15,8 +17,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Couche sombre avec opacité à 70% */
-    z-index: -1; /* Place la couche derrière tout le contenu */
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: -1;
 }
 
 header {
@@ -81,7 +83,7 @@ nav a:hover {
 
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(255, 0, 0);
     margin-top: 20px;
 }
 
@@ -90,7 +92,7 @@ h1 {
     text-align: center;
     max-width: 800px;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 0, 0, 0.9);
     border-radius: 8px;
 }
 
@@ -121,8 +123,8 @@ h1 {
     text-align: center;
     max-width: 800px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.3); /* Fond noir semi-transparent */
-    color: white; /* Texte en blanc */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Ajoute une ombre au texte pour améliorer la lisibilité */
-    border-radius: 8px; /* Coins arrondis */
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 0, 0); 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 8px; 
 }
